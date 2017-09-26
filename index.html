@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GifTastic</title>
+	<title>GIF ZOO</title>
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<!--Jquery library-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!---->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
+<body class="container-fluid">
+	<!--Tittle-->
+	<div class="row">
+		<h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+			GIF ZOO
+		</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-1 col-lg-1 col-xl-1"></div>
+		<div class="col-xs-11 col-sm-11 col-md-2 col-lg-2 col-xl-2">
+			<form>
+				<div class="form-group">
+			    <label for="addTopic">Add a new animal to the zoo!</label>
+			    <input type="text" class="form-control" id="addTopic" autocomplete="off">
+			  </div>
+				  <button id="addBtn" type="submit" class="btn btn-dark">Submit</button>
+			</form>
+			<br>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+		<div class="col-md-1 col-lg-1 col-xl-1"></div>
+			<div class="card text-white bg-dark">
+				<div class="card-header text-center">Species</div>
+			 	<div class="card-body" id="topics"></div>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<divc class="row">
+		<div class="col-md-1 col-lg-1 col-xl-1"></div>
+		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+			<div class="card border-dark">
+				<div id="speciesTittle" class="card-header text-center"></div>
+				<div id="gifDiv" class="card-body"></div>
+			</div>
+		</div>
+		<div class="col-md-1 col-lg-1 col-xl-1"></div>
+	</div>
+	<br>
 <script type="text/javascript" src="assets/javascript/logic.js"></script>
 </body>
 </html>
